@@ -1,0 +1,28 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sat Dec 18 10:02:40 2021"
+  rime_version: 1.5.3
+
+# 設置外觀
+patch:
+  style/horizontal: false      # 候選橫排
+  style/inline_preedit: false  # 內嵌編碼（僅支持TSF）-是否取消在候選字窗顯示輸入內容
+  style/display_tray_icon: true  # 顯示托盤圖標
+  style/color_scheme: Night  # 選擇顏色風格
+  # 自訂顏色風格
+  # 使用顏色工具製作 https://bennyyip.github.io/Rime-See-Me/
+  preset_color_schemes:
+    Night:
+      name: Night
+      author: Papernight <papernighttw@gmail.com>
+      back_color: 0x1D0C0C
+      border_color: 0xB98071
+      text_color: 0xFBEFF3
+      hilited_text_color: 0xFFFFFF
+      hilited_back_color: 0xB98071
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_candidate_back_color: 0xD84659
+      candidate_text_color: 0xE3D1CA
+      comment_text_color: 0xDDC2BB
