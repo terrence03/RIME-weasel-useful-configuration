@@ -1,5 +1,21 @@
 patch:
-  # 應用輸入方案
+
+  # 用Shift及Caps鍵直接換中英文輸入
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Shift_L: commit_code
+    Shift_R: commit_code
+    Caps_Lock: commit_code
+
+  # 設置換頁按鍵
+  key_binder/bindings:
+    - {accept: bracketleft, send: Page_Up, when: has_menu}  # 以[]換頁
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+
+  # 設置候選字數量
+  menu/page_size: 9
+
+  # 設置輸入法列表選項
   schema_list:
     - schema: luna_pinyin_tw # 朙月拼音-臺灣正體
   
@@ -7,17 +23,9 @@ patch:
   switcher/hotkeys:
     - "Control+grave" # 修改F4叫出輸入法切換器, 改為control+`
 
-  # 設置候選字數量
-  menu/page_size: 9
+
   
-  # 設置換頁按鍵
-  key_binder/bindings:
-    - { when: paging, accept: bracketleft, send: Page_Up }  # 以[]換頁
-    - { when: has_menu, accept: bracketright, send: Page_Down }
   
-  # 用Shift及Caps鍵直接換中英文輸入
-  ascii_composer/good_old_caps_lock: true
-  ascii_composer/switch_key:
-    Shift_L: commit_code
-    Shift_R: commit_code
-    Caps_Lock: commit_code
+
+
+
