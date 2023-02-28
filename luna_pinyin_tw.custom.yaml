@@ -39,8 +39,8 @@ patch:
     #- derive/^fe([in])$/hu$1/          # fei => hui, fen => hun
     #- derive/^f([ao])/hu$1/            # fa => hua, ...
     #- derive/^([bpmf])eng$/$1ong/      # meng = mong, ...
-    - derive/([aeio])n$/$1ng/ # an => ang, en => eng, in => ing, on => ong
-    - derive/([aeio])ng$/$1n/ # ang => an, eng => en, ing => in, ong => on
+    - derive/([eio])n$/$1ng/ # en => eng, in => ing, on => ong
+    - derive/([eio])ng$/$1n/ # eng => en, ing => in, ong => on
 
   # 特殊符號設置
   punctuator/import_preset: symbols.custom
