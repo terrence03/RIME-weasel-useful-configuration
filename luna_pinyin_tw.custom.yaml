@@ -2,8 +2,10 @@
 # 包含模糊音與詞典路徑
 
 patch:
+  # 設置擴展詞典
   translator/dictionary: luna_pinyin_tw.extended
 
+  # 設置模糊音
   speller/algebra:
     # 預設配置, 建議保留
     - erase/^xx$/
@@ -37,5 +39,8 @@ patch:
     #- derive/^fe([in])$/hu$1/          # fei => hui, fen => hun
     #- derive/^f([ao])/hu$1/            # fa => hua, ...
     #- derive/^([bpmf])eng$/$1ong/      # meng = mong, ...
-    - derive/([aeio])n$/$1ng/         # an => ang, en => eng, in => ing, on => ong
-    - derive/([aeio])ng$/$1n/         # ang => an, eng => en, ing => in, ong => on
+    - derive/([aeio])n$/$1ng/ # an => ang, en => eng, in => ing, on => ong
+    - derive/([aeio])ng$/$1n/ # ang => an, eng => en, ing => in, ong => on
+
+  # 特殊符號設置
+  punctuator/import_preset: symbols.custom
