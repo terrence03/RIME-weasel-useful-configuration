@@ -11,7 +11,7 @@ patch:
   style/inline_preedit: false  # 內嵌編碼（僅支持TSF）-是否取消在候選字窗顯示輸入內容
   style/display_tray_icon: true  # 顯示托盤圖標
   style/layout:
-    max_height: 600
+    min_width: 160
     margin_x: 8
     margin_y: 8
     spacing: 10
