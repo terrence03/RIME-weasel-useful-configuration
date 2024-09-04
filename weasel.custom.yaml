@@ -10,6 +10,16 @@ patch:
   style/horizontal: false      # 候選橫排
   style/inline_preedit: false  # 內嵌編碼（僅支持TSF）-是否取消在候選字窗顯示輸入內容
   style/display_tray_icon: true  # 顯示托盤圖標
+  style/layout:
+    max_height: 600
+    margin_x: 8
+    margin_y: 8
+    spacing: 10
+    candidate_spacing: 12
+    hilite_spacing: 2
+    hilite_padding: 2
+    corner_radius: 10
+    round_corner: 6
   style/color_scheme: Night  # 選擇顏色風格
   # 自訂顏色風格
   # 使用顏色工具製作 https://bennyyip.github.io/Rime-See-Me/
@@ -17,12 +27,20 @@ patch:
     Night:
       name: Night
       author: Terrence <terrence0303@protonmail.com>
-      back_color: 0x1D0C0C
-      border_color: 0xB98071
-      text_color: 0xFBEFF3
-      hilited_text_color: 0xFFFFFF
-      hilited_back_color: 0xB98071
-      hilited_candidate_text_color: 0xFFFFFF
-      hilited_candidate_back_color: 0xD84659
-      candidate_text_color: 0xE3D1CA
-      comment_text_color: 0xDDC2BB
+      color_format: rgba
+      text_color: 0xa6a6a6
+      back_color: 0x3D3D3D
+      label_color: 0xBBBBBB
+      border_color: 0x3D3D3D
+      shadow_color: 0xb4000000
+      comment_text_color: 0x545554
+      candidate_text_color: 0xEEEEEE
+      hilited_text_color: 0x3D3D3D
+      hilited_back_color: 0xFFFFFF
+      hilited_comment_text_color: 0xa6a6a6
+      hilited_candidate_back_color: 0xE3E3E3
+      hilited_candidate_border_color: 0xE3E3E3
+      hilited_candidate_label_color: 0x4C4C4C
+      hilited_candidate_text_color: 0x000000
+      nextpage_color: 0xBBBBBB                 # 下一页
+      prevpage_color: 0x000000                 # 上一页

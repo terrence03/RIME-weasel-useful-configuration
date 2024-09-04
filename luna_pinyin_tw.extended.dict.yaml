@@ -6,6 +6,5 @@ use_preset_vocabulary: true
 
 import_tables:
   - luna_pinyin                   # 基本詞庫建議保留
-  - dicts\luna_pinyin_tw.subject
-  - dicts\luna_pinyin_tw.mandarin
-
+  - dicts\mandarin
+  - dicts\subject
